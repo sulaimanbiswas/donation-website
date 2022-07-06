@@ -23,6 +23,13 @@ li {
     padding: 0 7%;
 }
 
+#donate-area,
+#donate-plan,
+#image-gallery,
+#my-update {
+    padding: 110px 0;
+}
+
 .btn {
     text-decoration: none;
     background-color: #fc5c65;
@@ -35,6 +42,40 @@ li {
     -moz-border-radius: 6px;
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
+}
+
+
+
+#donate-area .container,
+#donate-plan .container,
+#image-gallery .container,
+#my-update .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#donate-area .donate-content,
+#image-gallery .image-content,
+#my-update .my-update-content {
+    text-align: center;
+}
+
+#donate-area .donate-content h2,
+#donate-plan .donate-plan-content h2,
+#image-gallery .image-content h2,
+#my-update .my-update-content h2 {
+    font-size: 50px;
+}
+
+#donate-area .donate-content p,
+#donate-plan .donate-plan-content p,
+#image-gallery .image-content p,
+#my-update .my-update-content p {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #777;
 }
 
 /* Banner-Area */
@@ -82,31 +123,12 @@ li {
 
 /* Donate Area */
 
-#donate-area {
-    min-height: 100vh;
-}
+/* #donate-area {} */
 
-#donate-area .container {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#donate-area .donate-content {
-    text-align: center;
-    width: 60%;
-}
 
-#donate-area .donate-content h2 {
-    font-size: 50px;
-}
 
-#donate-area .donate-content p {
-    margin-top: 30px;
-}
-
-#donate-area .donate-content .donate-items {}
+/* #donate-area .donate-content .donate-items {} */
 
 #donate-area .donate-content .donate-items ul {
     display: flex;
@@ -155,8 +177,130 @@ li {
     border: 1px solid #000;
 }
 
-
 #donate-area .donate-content a {
     margin-top: 30px;
 
+}
+
+/* Donate Plan */
+#donate-plan {
+    background-color: #ddd;
+}
+
+#donate-plan .donate-plan-header {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#donate-plan .donate-plan-items {
+    display: flex;
+    margin-top: 30px;
+}
+
+
+
+#donate-plan .donate-plan-items .donate-single-item {
+    padding: 50px 40px;
+    margin: 10px;
+    text-align: center;
+}
+
+#donate-plan .donate-plan-items #donate-single-item-1 {
+    background-color: #EDF5F6;
+}
+
+#donate-plan .donate-plan-items #donate-single-item-2 {
+    background-color: #ffeeef;
+}
+
+#donate-plan .donate-plan-items #donate-single-item-3 {
+    background-color: #FFF4D6;
+}
+
+#donate-plan .donate-plan-items .donate-single-item img {
+    height: 60px;
+    width: 60px;
+}
+
+#donate-plan .donate-plan-items .donate-single-item h3 {
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+#donate-plan .donate-plan-items .donate-single-item p {
+    color: #333;
+}
+
+/* Images Gallery */
+
+/* #image-gallery {} */
+
+#image-gallery .images-item {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#image-gallery .images-item img {
+    width: 33%;
+    padding: 10px;
+}
+
+/* My Update */
+
+#my-update {
+    background-color: #EDF5F6;
+}
+
+
+#my-update .my-content-item {
+    background-color: #FFF4D6;
+    padding: 80px 200px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+#my-update .my-content-item input {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    -ms-border-radius: 6px 0 0 6px;
+    -o-border-radius: 6px 0 0 6px;
+    border-right: none;
+}
+
+#my-update .my-content-item button {
+    padding: 10px;
+    font-size: 20px;
+    background-color: #fc5c65;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    -ms-border-radius: 0 6px 6px 0;
+    -o-border-radius: 0 6px 6px 0;
+    color: #fff;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0B0D17;
+    padding: 70px 0;
+    text-align: center;
+}
+
+footer h2 {
+    color: #fc5c65;
+    font-size: 30px;
+}
+
+footer p {
+    color: #fff;
+    margin-top: 10px;
 }
